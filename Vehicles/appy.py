@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # Load data
-car_data = pd.read_csv("vehicles_us_preprocessed.csv")  
+car_data = pd.read_csv("Vehicles/vehicles_us_preprocessed.csv")  
 
 st.title("🚗 Vehicle Data Preprocessing and Visualization")
 st.write("Explore and visualize your preprocessed vehicle dataset interactively.")
