@@ -55,26 +55,26 @@ else:
 st.header("🔗 Correlation Heatmap")
 
 # Toggle heatmap display
-show_heatmap = st.checkbox("Show Correlation Heatmap", value=True)
+#show_heatmap = st.checkbox("Show Correlation Heatmap", value=True)
 
-if show_heatmap:
+#if show_heatmap:
     # Select numeric columns only
-    numeric_data = car_data.select_dtypes(include=['int64', 'float64', 'int32', 'uint8'])
+    #numeric_data = car_data.select_dtypes(include=['int64', 'float64', 'int32', 'uint8'])
 
     # Remove columns that might be misleading or not useful in correlation
-    columns_to_exclude = ['model_year', 'is_4wd', 'days_listed']  # adjust as needed
-    numeric_data = numeric_data.drop(columns=[col for col in columns_to_exclude if col in numeric_data.columns])
+    #columns_to_exclude = ['model_year', 'is_4wd', 'days_listed']  # adjust as needed
+    #numeric_data = numeric_data.drop(columns=[col for col in columns_to_exclude if col in numeric_data.columns])
 
     # Compute and round correlation matrix
-    corr_matrix = numeric_data.corr().round(2)
+    #corr_matrix = numeric_data.corr().round(2)
 
     # Create heatmap
-    fig = px.imshow(
-        corr_matrix,
-        text_auto=True,
-        title="Correlation Heatmap",
-        aspect="auto"
-    )
+    #fig = px.imshow(
+        #corr_matrix,
+        #text_auto=True,
+        #title="Correlation Heatmap",
+        #aspect="auto"
+    #)
 
     # Display in Streamlit
     st.plotly_chart(fig, use_container_width=True)
