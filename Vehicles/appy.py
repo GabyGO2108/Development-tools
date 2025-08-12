@@ -77,6 +77,6 @@ st.header("🔗 Correlation Heatmap")
     #)
 
     # Display in Streamlit
-    st.plotly_chart(fig, use_container_width=True)
-else:
-    st.info("Check the box above to display the correlation heatmap.")
+    #st.plotly_chart(fig, use_container_width=True)
+#else:
+    #st.info("Check the box above to display the correlation heatmap.")
